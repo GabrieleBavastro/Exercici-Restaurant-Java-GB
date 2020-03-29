@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Fase 1 - Restaurant</h2>
+
+<button onclick="myFunction()">Push for begin!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    let Euro5 ,Euro10, Euro20, Euro50,Euro100,Euro200,Euro500;
+	Euro5 = 5;
+	Euro10 = 10;
+	Euro20 = 20;
+	Euro50 = 50;
+	Euro100 = 100;
+	Euro200 = 200;
+	Euro500 = 500;
+	  
+    let dishes = ["Pasta", "Salad", "Pizza", "Meat","Tiramisu"];
+    let prices = ["5", "10", "15", "20", "5"];
+
+    var text=dishes.map(function(itm,i){
+    return [itm,prices[i]];
+    }).join('<br>');
+
+    document.getElementById("demo").innerHTML = ("The menu of today is: " + "<br>" + text);
+  }
+
+</script>
+
+</body>
+</html>
