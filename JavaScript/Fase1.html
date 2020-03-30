@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h2>Fase 1 - Restaurant</h2>
+<h2>Fase 1 - Restaurant.</h2>
 
 <button onclick="myFunction()">Push for begin!</button>
 
@@ -10,7 +10,7 @@
 
 <script>
 function myFunction() {
-    let Euro5 ,Euro10, Euro20, Euro50,Euro100,Euro200,Euro500;
+    let Euro5 ,Euro10, Euro20, Euro50, Euro100, Euro200, Euro500, Euro, total;
 	Euro5 = 5;
 	Euro10 = 10;
 	Euro20 = 20;
@@ -18,15 +18,17 @@ function myFunction() {
 	Euro100 = 100;
 	Euro200 = 200;
 	Euro500 = 500;
+  Euro = "€"
+  total = 0;
 	  
     let dishes = ["Pasta", "Salad", "Pizza", "Meat","Tiramisu"];
     let prices = ["5", "10", "15", "20", "5"];
 
     var text=dishes.map(function(itm,i){
     return [itm,prices[i]];
-    }).join('<br>');
+    }).join(Euro + '<br>');
 
-    document.getElementById("demo").innerHTML = ("The menu of today is: " + "<br>" + text);
+    document.getElementById("demo").innerHTML = ("The menu of today is: " + "<br>" + text + Euro);
   }
 
 </script>
