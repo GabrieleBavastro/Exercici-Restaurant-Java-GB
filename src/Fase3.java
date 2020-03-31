@@ -122,7 +122,7 @@ public class Fase3 {
 				{
 					System.out.println("The total bill is: " + sum + "€.");
 				}
-				/* When the bill is calculated begin a do while loop for calculate 
+				/* When the bill is calculated, begin a do while loop for calculate 
 				which is the best way to receive the payment by cash.*/
 				int j, ammount;
 
