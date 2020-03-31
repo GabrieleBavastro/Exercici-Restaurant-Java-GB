@@ -104,8 +104,7 @@ public class Fase2 {
     sum += d;
     if (bill == 1) 
     {System.out.println("The total bill is: " + sum + "€.");}
-    {System.out.println("The total bill is: " + sum + "€.");}
-   }
-	
-}
+
+	}
+  }
 }
